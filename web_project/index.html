@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Cafe PopUP</title>
+</head>
+<body>
+
+    <div class="overlay">
+        <div id="headings">
+            
+
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <div class="menu">
+                    <h1>Breakfast</h1>
+                    <ul>
+                        <li>Pancakes: <strong>$10</strong></li>
+                        <li>Waffles: <strong>$10</strong></li>
+                        <li>Cappuccino: <strong>$10</strong></li>
+                    </ul>
+                    <h1>Lunch</h1>
+                    <ul>
+                        <li>Pancakes: <strong>$10</strong></li>
+                        <li>Waffles: <strong>$10</strong></li>
+                        <li>Cappuccino: <strong>$10</strong></li>
+                    </ul>
+                    <h1>Dinner</h1>
+                    <ul>
+                        <li>Pancakes: <strong>$10</strong></li>
+                        <li>Waffles: <strong>$10</strong></li>
+                        <li>Cappuccino: <strong>$10</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button onclick="togglePopup()" class="button" id="button">MENU</button>
+    </div>
+</body>
+<script>
+    function togglePopup(){
+        document.getElementById("popup-1").classList.toggle("active");
+        document.getElementById("button").classList.toggle("active");
+        document.getElementById("headings").classList.toggle("active");
+    }
+</script>
+</html>
